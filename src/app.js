@@ -2,23 +2,21 @@
 import Counter from './components/counter'
 import Controls from './components/controls'
 
-const state = {
-  count: 0
-}
+import store from './store'
 
 function increment () {
-  ++state.count
+  ++store.state.count
 }
 
 function decrement () {
   console.log('decrement start')
-  --state.count
+  --store.state.count
 }
 
 export default () => `
 <div>
   <h1>Simple App</h1>
-  ${Counter(state.count)}
+  ${Counter(store.state.count)}
   ${Controls(increment, decrement)}
 </div>
 `
