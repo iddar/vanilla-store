@@ -5,4 +5,4 @@ function render (mountPoint, app) {
   document.querySelector(mountPoint).innerHTML = app
 }
 
-render('#appContainer', App)
+render('#appContainer', App())
