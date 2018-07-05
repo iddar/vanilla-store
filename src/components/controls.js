@@ -1,7 +1,7 @@
 
-export default () => `
+export default (increment, decrement) => `
   <div>
-    <button>-</button>
+    <button onClick="(${decrement.toLocaleString()})()">-</button>
     <button>+</button>
   </div>
 `
