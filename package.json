@@ -1,0 +1,18 @@
+{
+  "name": "local-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "iddar olivares <iddar@dbug.mx> (https://github.com/iddar)",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.9.4"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
