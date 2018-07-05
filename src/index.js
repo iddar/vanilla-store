@@ -8,6 +8,5 @@ function render (mountPoint, app) {
 
 render('#appContainer', App())
 store.render = function () {
-  console.log('render...')
   render('#appContainer', App())
 }

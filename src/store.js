@@ -2,7 +2,8 @@
 class CreateStore {
   constructor (config) {
     this.store = {
-      count: 5
+      count: 5,
+      count2: 3
     }
   }
 
@@ -12,7 +13,6 @@ class CreateStore {
 
   set state (params) {
     Object.assign(this.store, params)
-    console.log('change value')
     this.onChange()
   }
 
@@ -21,7 +21,6 @@ class CreateStore {
   }
 
   onChange () {
-    console.log('onChange...')
     this.render && this.render()
   }
 }
